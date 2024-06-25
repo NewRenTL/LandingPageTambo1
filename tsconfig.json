@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@components/*":["src/components/*"],
+      "@assets/*":["src/assets/*"]
+    },
+    "outDir": "./dist",                        // Output directory for compiled files
+    "strict": true,                            // Enable strict type-checking options
+    "esModuleInterop": true,                   // Enable interop between CommonJS and ES Modules
+    "skipLibCheck": true,                      // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,  // Enforce consistent casing in file names
+    "allowJs": true,                           // Allow JavaScript files to be compiled
+    "moduleResolution": "node",                // Module resolution strategy
+    "resolveJsonModule": true   
+  },
+  "include": [
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "src/**/*.tsx",
+      "src/**/*.ts",
+      "src/components/**/*",
+      "src/assets/**/*"
+    ],
+    "exclude": [
+      "node_modules" // Exclude node_modules directory
+    ]
+}
