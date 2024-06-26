@@ -2,9 +2,6 @@ import React from "react";
 import { useRef } from "react";
 
 const FindBar = () => {
-  const inputRef = useRef(null);
-
-
   return (
     <div className="w-2/5 px-2 flex py-2 bg-[#FBFBFB] rounded-md items-center">
       <input
