@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'AmsiProCondensedUltra';
+  src: url('/src/assets/fonts/AmsiProCondensedUltra/AmsiProCondensed-Ultra.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "FSPDEMO";
+  src:url('/src/assets/fonts/fsd-demo/fspdemo.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'NuberNextCondensed';
+  src: url('/src/assets/fonts/NuberNextCondensed/NuberNextBlackCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HumerGeometricSansBold';
+  src: url('/src/assets/fonts/HurmeGeometricSansBold/HurmeGeometricSans3-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Franklin_Gothic';
+  src: url('/src/assets/fonts/franklin-gothy/Franklin_Gothic_Heavy_Regular.ttf') format('truetype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
