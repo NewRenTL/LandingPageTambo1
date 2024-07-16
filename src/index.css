@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'AmsiProCondensedUltra';
   src: url('/src/assets/fonts/AmsiProCondensedUltra/AmsiProCondensed-Ultra.ttf') format('truetype');
@@ -28,9 +32,6 @@
   src: url('/src/assets/fonts/futuruaExtraBold/Futura_Extra_Bold.ttf') format('truetype');
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
   margin: 0;
