@@ -2,14 +2,14 @@ import React from "react";
 
 const TitleBarAntojos = ({ title }) => {
   return (
-    <div className="title-finde flex items-center justify-center md:justify-between flex-row rounded-lg bg-blue-300 w-[90%] px-4 py-2">
-      <h2 className="flex flex-grow-1 font-bold">{title}</h2>
+    <div className="title-finde flex items-center justify-center md:justify-between flex-row rounded-lg bg-transparent w-[90%] px-4 py-2">
+      <h2 className="flex font-futuraFont uppercase md:pl-4 md:text-2xl text-[#B32C8A] flex-grow-1 font-bold">{title}</h2>
 
-      <div className="hidden md:flex flex-row items-center bg-orange-700">
-        <button className="flex group items-center transition-colors duration-300 hover:bg-slate-300 border-stone-600 border justify-center px-4 py-4 rounded-full bg-yellow-400 mx-1">
+      <div className="hidden md:flex flex-row items-center bg-transparent">
+        <button className="flex group items-center transition-colors duration-300 hover:bg-slate-300 border-transparent border justify-center px-4 py-4 rounded-full bg-yellow-400 mx-1">
           {/*<h2 className="font-bold mb-[2px] text-2xl">{"<"}</h2>*/}
           <svg
-            className="w-5 h-5 fill-black group-hover:fill-red-600"
+            className="w-5 h-5 fill-[#B32C8A] group-hover:fill-red-600"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +24,11 @@ const TitleBarAntojos = ({ title }) => {
           </svg>
         </button>
 
-        <button className="flex group hover:bg-slate-300 items-center transition-colors duration-300 border-stone-600 border justify-center py-4 px-4  rounded-full bg-yellow-400">
+        <button className="flex group hover:bg-slate-300 items-center transition-colors duration-300 border-transparent border justify-center py-4 px-4  rounded-full bg-yellow-400">
           {/*<h2 className="font-bold mb-[2px] text-2xl">{">"}</h2>*/}
           <svg
             version="1.1"
-            className="w-5 h-5 fill-black group-hover:fill-red-600"
+            className="w-5 h-5 fill-[#B32C8A] group-hover:fill-red-600"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 300 320"

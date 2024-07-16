@@ -8,8 +8,8 @@ const CardItemRecomm = ({ price = "", name = "", img = "" }) => {
     <img className="w-24 h-24" src={img} alt=""/>
 
     <div className="w-full text-center py-2 px-4 mt-1">
-        <h2 className="font-bold text-[#9E318A]">{name}</h2>
-        <h2 className="font-bold">S/{price}</h2>
+        <h2 className="font-bold font-hurme3 text-[#9E318A]">{name}</h2>
+        <h2 className="font-bold font-hurme3">S/{price}</h2>
     </div>
 
     </article>

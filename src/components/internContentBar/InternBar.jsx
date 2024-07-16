@@ -38,7 +38,7 @@ const InternBar = () => {
                 d="M373.57 0 512 120.75 371.53 243.58l-20.92-23.91 94.93-83L0 137.09v-31.75l445.55-.41-92.89-81.02z"
               />  
             </svg>
-            <h2 className="font-fspdemo text-sm text-[#F5E844]">{title}</h2>
+            <h2 className="font-hurme3 sm:text-sm md:text-base lg:text-xl  text-[#F5E844]">{title}</h2>
           </li>
         ))}
       </ul>

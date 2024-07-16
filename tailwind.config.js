@@ -7,7 +7,9 @@ export default {
     extend: {
       fontFamily:{
         amsiprocond:['AmsiProCondensedUltra','sans-serif'],
-        fspdemo:['FSPDEMO','sans-serif']
+        fspdemo:['FSPDEMO','sans-serif'],
+        hurme3:['HumerGeometricSansBold','sans-serif'],
+        futuraFont:['FuturaExtraBold','sans-serif']
       }  
     },
   },

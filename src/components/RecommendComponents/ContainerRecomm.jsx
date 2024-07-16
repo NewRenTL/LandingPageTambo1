@@ -31,7 +31,7 @@ const ContainerRecomm = () => {
         </svg>
       </div>
       <div className="flex items-center justify-center md:w-[60%] px-5 py-2 mb-2 mt-4 my-1 bg-transparent rounded-lg">
-        <p className="flex text-center md:text-start font-semibold text-wrap text-white">
+        <p className="flex font-hurme3 text-center md:text-start font-semibold text-wrap text-white">
           El otro dia probé el café de Tambo y la verdad es que me sorprendio.
           Desde que lo abri, el cromo era increible , como si te envolviera en
           un abrazo de chocolate y caramelo

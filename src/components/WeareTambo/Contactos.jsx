@@ -3,12 +3,12 @@ import inst_icon from '@assets/img/insta-iconNewSize.png'
 
 const Contactos = () => {
   return (
-    <div className="flex flex-col w-full md:w-[30%] justify-center items-center px-2 py-2 my-2 bg-rose-500">
-      <div className="flex justify-center items-center py-1 px-2 bg-orange-300">
-        <h2 className="text-center  ont-bold text-[#8A3C82]">contacto@tambo.pe</h2>
+    <div className="flex flex-col w-full md:w-[30%] justify-center items-center px-2 py-2 my-2 bg-transparent">
+      <div className="flex justify-center items-center py-1 px-2 bg-transparent">
+        <h2 className="text-center font-futuraFont text-xl md:text-md text-[#8A3C82]">contacto@tambo.pe</h2>
       </div>
 
-      <div className="flex justify-center items-center py-1 px-2 my-2 mx-1 bg-slate-100">
+      <div className="flex justify-center items-center py-1 px-2 my-2 mx-1 bg-transparent">
         <div className="facebook-icon flex px-1 py-1">
           <svg
             className="flex w-10 h-10"
@@ -138,7 +138,7 @@ const Contactos = () => {
           </svg>    
         </div>
         <div className="tiktok-icon flex px-1 py-1">
-          <img src={inst_icon} className="flex w-14 h-14"></img>
+          <img src={inst_icon} className="flex w-12 h-12"></img>
         </div>
       </div>
     </div>

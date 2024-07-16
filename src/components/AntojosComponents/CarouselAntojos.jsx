@@ -13,7 +13,7 @@ const CarouselAntojos = ({data}) => {
       key={index}
       price={data.price}
       name={data.name}
-      img={LayX}
+      img={data.srcImage}
       nextSlide={() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
       }}

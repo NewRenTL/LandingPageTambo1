@@ -9,10 +9,10 @@ const AntojosWeek = ({ nameSection = "TopSection" }) => {
   return (
     <div className="flex flex-col my-3 justify-center items-center w-full">
       <TitleBarAntojos title={nameSection} />
-      <div className="carousel-container md:hidden rounded-lg block relative my-2 mx-1 py-5 w-[90%] bg-slate-400">
+      <div className="carousel-container md:hidden rounded-lg block relative my-2 mx-1 py-5 w-[90%] bg-transparent">
         <CarouselAntojos data={myAntojos} />
       </div>
-      <div className="container-articles hidden rounded-lg md:flex w-[90%] my-2 px-5 py-5 bg-slate-600">
+      <div className="container-articles hidden rounded-lg md:flex w-[90%] my-2 px-5 py-5 bg-transparent">
         <ContainerAntojos data={myAntojos} />
       </div>
     </div>
