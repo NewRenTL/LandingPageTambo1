@@ -2,7 +2,7 @@ import React from "react";
 import CarouselAntojos from "@src/components/AntojosComponents/CarouselAntojos";
 import ContainerAntojos from "@components/AntojosComponents/ContainerAntojos";
 import TitleBarAntojos from "@components/AntojosComponents/TitleBarAntojos";
-import myAntojos from "@src/data/dataAntojos.js";
+import myAntojos from "@src/data/dataAntojos";
 
 const AntojosWeek = ({ nameSection = "TopSection" }) => {
   console.log(myAntojos);

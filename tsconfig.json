@@ -18,7 +18,8 @@
     "src/**/*.{js,ts,jsx,tsx}",
     "src/components/**/*",
     "src/assets/**/*",
-    "src/layouts/**/*",         
+    "src/layouts/**/*",
+    "src/data/*.{js}",
   ],
   "exclude": [
     "node_modules"                             // Exclude node_modules directory

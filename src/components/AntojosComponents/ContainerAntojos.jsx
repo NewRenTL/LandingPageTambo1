@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CardItems from "@components/AntojosComponents/CardItems";
-import LayX from "@assets/img/LAYX.png";
+
 
 const ContainerAntojos = ({ data }) => {
   return (
