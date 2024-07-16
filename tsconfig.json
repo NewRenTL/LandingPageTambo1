@@ -1,29 +1,26 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./",
+  "compilerOptions": {                      // Support for JSX in .tsx and .jsx files
+    "baseUrl": "src",                            // Base URL for module resolution
     "paths": {
       "@src/*": ["src/*"],
-      "@components/*":["src/components/*"],
-      "@assets/*":["src/assets/*"]
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"],        // Corrige la ruta a @assets
+      "@layouts/*":["src/layouts/*"]
     },
     "outDir": "./dist",                        // Output directory for compiled files
     "strict": true,                            // Enable strict type-checking options
-    "esModuleInterop": true,                   // Enable interop between CommonJS and ES Modules
-    "skipLibCheck": true,                      // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true,  // Enforce consistent casing in file names
+    "esModuleInterop": true,                   // Enable interop between CommonJS
     "allowJs": true,                           // Allow JavaScript files to be compiled
     "moduleResolution": "node",                // Module resolution strategy
-    "resolveJsonModule": true   
+    "resolveJsonModule": true                  // Allow importing .json files
   },
   "include": [
-      "src/**/*.js",
-      "src/**/*.jsx",
-      "src/**/*.tsx",
-      "src/**/*.ts",
-      "src/components/**/*",
-      "src/assets/**/*"
-    ],
-    "exclude": [
-      "node_modules" // Exclude node_modules directory
-    ]
+    "src/**/*.{js,ts,jsx,tsx}",
+    "src/components/**/*",
+    "src/assets/**/*",
+    "src/layouts/**/*",         
+  ],
+  "exclude": [
+    "node_modules"                             // Exclude node_modules directory
+  ]
 }
