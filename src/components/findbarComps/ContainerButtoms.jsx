@@ -3,7 +3,7 @@ import IconButtom from "./IconButtom"
 import IconUserButtom from "./IconUserButtom";
 const ContainerButtoms = () => {
   return (
-    <div className="w-80 flex">
+    <div className="w-4/5 sm:w-1/5 justify-center flex sm:justify-end">
       <IconButtom
         viewBox="0 0 278 278"
         enaBack="new 0 0 278 278"

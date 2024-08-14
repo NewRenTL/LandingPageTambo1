@@ -12,14 +12,15 @@
     "esModuleInterop": true,                   // Enable interop between CommonJS
     "allowJs": true,                           // Allow JavaScript files to be compiled
     "moduleResolution": "node",                // Module resolution strategy
-    "resolveJsonModule": true                  // Allow importing .json files
+    "resolveJsonModule": true ,
+    "jsx": "react"                // Allow importing .json files
   },
   "include": [
     "src/**/*.{js,ts,jsx,tsx}",
     "src/components/**/*",
     "src/assets/**/*",
     "src/layouts/**/*",
-    "src/data/*.{js}",
+    "src/data/*.{js}", "src/pages/TemplateBodyMain.tsx", "src/pages/TemplateAboutUs.tsx",
   ],
   "exclude": [
     "node_modules"                             // Exclude node_modules directory

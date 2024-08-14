@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const FindBar = () => {
   return (
-    <div className="w-2/5 px-2 flex py-2 bg-[#FBFBFB] rounded-md items-center">
+    <div className="hidden px-2 border sm:w-2/5 sm:flex py-2 bg-[#FBFBFB] rounded-md items-center">
       <input
         id="searchInput"
         type="text"
@@ -20,7 +20,7 @@ const FindBar = () => {
         focus:border-[#C0BFBF]
         "
       />
-      <label for="searchInput" className="cursor-pointer flex ml-2 h-6 w-1/12">
+      <label htmlFor="searchInput" className="cursor-pointer flex ml-2 h-6 w-1/12">
         <svg
           version="1.1"
           id="Layer_1"

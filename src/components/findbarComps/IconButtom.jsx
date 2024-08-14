@@ -2,7 +2,7 @@ import React from "react";
 
 function IconButtom({viewBox = "",enaBack ="",dpath=""}) {
   return (
-    <div className="iconButtom w-1/5 p-1 ml-5 bg-transparent flex items-center">
+    <div className="iconButtom w-2/6 p-1 bg-transparent flex items-center">
       <svg
         version="1.1"
         id="Layer_1"
