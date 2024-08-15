@@ -13,6 +13,7 @@
     "allowJs": true,                           // Allow JavaScript files to be compiled
     "moduleResolution": "node",                // Module resolution strategy
     "resolveJsonModule": true ,
+    "target": "ES2022",
     "jsx": "react"                // Allow importing .json files
   },
   "include": [
