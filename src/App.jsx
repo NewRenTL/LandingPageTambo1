@@ -14,6 +14,7 @@ function App() {
             <Route index element={<TemplateBodyMain></TemplateBodyMain>}></Route>
             <Route path="/home" element={<TemplateBodyMain />}></Route>
             <Route path="/aboutus" element={<TemplateAboutUs/>}></Route>
+            <Route path="*" element={<TemplateBodyMain></TemplateBodyMain>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
