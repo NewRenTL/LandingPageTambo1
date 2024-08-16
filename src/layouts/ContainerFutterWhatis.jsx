@@ -2,8 +2,8 @@ import React from "react";
 
 const ContainerFutterWhatis = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row justify-center items-center">
-      <div className="w-full flex flex-col md:w-4/12 h-[300px] justify-center items-center p-8">
+    <div className="w-full flex flex-col md:flex-row justify-center items-center my-2">
+      <div className="w-full flex flex-col md:w-4/12 h-[300px] justify-center items-center p-8 border-r-2 border-black">
         <div className="flex text-center mb-4">
           <h2 className="font-bold uppercase text-xl">Envianos tu correo</h2>
         </div>
@@ -24,7 +24,7 @@ const ContainerFutterWhatis = () => {
           </button>
         </div>
       </div>
-      <div className="w-full flex flex-col md:w-4/12 h-[300px] justify-start items-center p-8">
+      <div className="w-full flex flex-col md:w-4/12 h-[300px] justify-start items-center p-8 border-r">
         <div className="flex items-center mb-4">
           <h2 className="font-bold uppercase text-xl">Terminos</h2>
         </div>
@@ -33,7 +33,7 @@ const ContainerFutterWhatis = () => {
         <h3 className="my-2 font-semibold underline underline-offset-1 decoration-stone-500 ">Política de Privacidad</h3>
         <h3 className="my-2 font-semibold underline underline-offset-1 decoration-stone-500 ">Política de Cookies</h3>
       </div>
-      <div className="w-full flex flex-col md:w-4/12 h-[300px] items-start p-8 text-center">
+      <div className="w-full flex flex-col md:w-4/12 h-[300px] items-start p-8 text-center border-l-2 border-black">
         <div className="text-center mb-4 w-full">
           <h2 className="font-bold uppercase text-xl">Reclamaciones</h2>
         </div>
