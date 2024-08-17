@@ -12,8 +12,8 @@ const Card: React.FC<CardProps> = ({ svgComponent: SvgComponent, Title, SubConte
       <div className="svg-container items-center flex w-[60%] lg:w-[300px] h-[300px] px-2 py-2">
         <SvgComponent /> 
       </div>
-      <h2 className="text-center flex my-6 py-2">{Title}</h2>
-      <p className="text-center h-full px-5 lg:px-20 flex items-center font-semibold text-[16px]">{SubContent}</p>
+      <h2 className="text-center flex my-6 py-2 font-futuraFont text-[#8E3D71] text-xl">{Title}</h2>
+      <p className="text-center h-full px-5 lg:px-20 flex items-center font-semibold text-[16px] font-hurme3">{SubContent}</p>
     </div>
   );
 };

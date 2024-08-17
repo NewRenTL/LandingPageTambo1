@@ -87,9 +87,9 @@ const TemplateAboutUs: React.FC = () => {
         <HeaderAbout />
       </div>
       <SecImage />
-      <div className="flex flex-col w-full items-center bg-transparent">
+      <div className="flex flex-col py-10 w-full items-center bg-transparent">
         <div className="flex flex-col justify-center items-center py-5">
-          <h2 className="text-3xl font-bold">TAMBO ES</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold font-futuraFont text-[#8E3D71]">TAMBO ES</h2>
         </div>
         <div className="flex flex-col sm:flex-row w-full justify-center items-center py-5 px-10 ">
           {listOfWhatIs.map((item) => (
@@ -103,9 +103,9 @@ const TemplateAboutUs: React.FC = () => {
         </div>
       </div>
       <FourSections></FourSections>
-      <div className="flex flex-col w-full items-center bg-transparent">
+      <div className="flex flex-col py-10 w-full items-center bg-transparent">
         <div className="flex flex-col justify-center items-center py-5">
-          <h2 className="text-3xl font-bold">TAMBO ES</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold font-futuraFont text-[#8E3D71]">TAMBO ES</h2>
         </div>
         <div className="flex flex-col sm:flex-row w-full justify-center items-center py-5 px-10 ">
           {listOfWhatIs2.map((item) => (
