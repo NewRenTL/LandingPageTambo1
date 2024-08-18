@@ -6,6 +6,7 @@ import TemplateAboutUs from "./pages/TemplateAboutUs.tsx";
 import TemplateContact from './pages/TemplateContact.tsx'
 import TemplateLegalTerms from "./pages/TemplateLegalTerms.tsx";
 import TemplateCookies from "./pages/TemplateCookies.tsx";
+import TemplateEcomerceTerms from "./pages/TemplateEcomerceTerms.tsx";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
             <Route path="/complaintForm" element={<TemplateContact/>}></Route>
             <Route path="/legalTerms" element={<TemplateLegalTerms/>}></Route>
             <Route path="/cookiesTerms" element={<TemplateCookies/>}></Route>
+            <Route path="/ecomerceTerms" element={<TemplateEcomerceTerms/>}></Route>
             <Route path="*" element={<TemplateBodyMain></TemplateBodyMain>}></Route>
           </Routes>
         </BrowserRouter>
