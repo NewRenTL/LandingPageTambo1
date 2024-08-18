@@ -5,9 +5,7 @@ import LayX from "@assets/img/LAYX.png";
 
 const CarouselAntojos = ({data}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log("Corousel")
-  console.log(data)
-  
+
   const slides = data.map((data, index) => (
     <CardItems
       key={index}

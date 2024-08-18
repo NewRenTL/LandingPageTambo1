@@ -3,7 +3,7 @@ import TopBar from "./layouts/TopBar.jsx";
 import TemplateBodyMain from "./pages/TemplateBodyMain.tsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TemplateAboutUs from "./pages/TemplateAboutUs.tsx";
-
+import TemplateContact from './pages/TemplateContact.tsx'
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
             <Route index element={<TemplateBodyMain></TemplateBodyMain>}></Route>
             <Route path="/home" element={<TemplateBodyMain />}></Route>
             <Route path="/aboutus" element={<TemplateAboutUs/>}></Route>
+            <Route path="/complaintForm" element={<TemplateContact/>}></Route>
             <Route path="*" element={<TemplateBodyMain></TemplateBodyMain>}></Route>
           </Routes>
         </BrowserRouter>

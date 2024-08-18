@@ -5,7 +5,6 @@ import TitleBarAntojos from "@components/AntojosComponents/TitleBarAntojos";
 import myAntojos from "@src/data/dataAntojos";
 
 const AntojosWeek = ({ nameSection = "TopSection" }) => {
-  console.log(myAntojos);
   return (
     <div className="flex flex-col my-3 justify-center items-center w-full">
       <TitleBarAntojos title={nameSection} />
