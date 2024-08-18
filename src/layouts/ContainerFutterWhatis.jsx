@@ -3,7 +3,7 @@ import React from "react";
 const ContainerFutterWhatis = () => {
   return (
     <div className="w-full flex flex-col md:flex-row justify-center items-center my-2">
-      <div className="w-full flex flex-col md:w-4/12 h-[300px] justify-center items-center p-8 border-r-2 border-black">
+      <div className="w-full flex flex-col md:w-4/12 h-[300px] justify-center items-center px-5  border-r-2 border-black">
         <div className="flex text-center mb-4">
           <h2 className="font-bold uppercase text-xl font-futuraFont">Envianos tu correo</h2>
         </div>
