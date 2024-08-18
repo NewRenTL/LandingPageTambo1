@@ -11,8 +11,9 @@ function App() {
   return (
     <>
       <div className="flex flex-col w-full">
+      <BrowserRouter>
         <TopBar />
-        <BrowserRouter>
+       
           <Routes>
             <Route index element={<TemplateBodyMain></TemplateBodyMain>}></Route>
             <Route path="/home" element={<TemplateBodyMain />}></Route>
