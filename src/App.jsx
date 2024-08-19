@@ -7,32 +7,38 @@ import TemplateContact from "./pages/TemplateContact.tsx";
 import TemplateLegalTerms from "./pages/TemplateLegalTerms.tsx";
 import TemplateCookies from "./pages/TemplateCookies.tsx";
 import TemplateEcomerceTerms from "./pages/TemplateEcomerceTerms.tsx";
+import MainContext from "./contexts/MainContext.jsx";
 function App() {
   return (
     <>
       <div className="flex flex-col w-full">
         <BrowserRouter>
-          <TopBar />
+          <MainContext>
+            <TopBar />
 
-          <Routes>
-            <Route
-              index
-              element={<TemplateBodyMain></TemplateBodyMain>}
-            ></Route>
-            <Route path="/home" element={<TemplateBodyMain />}></Route>
-            <Route path="/aboutus" element={<TemplateAboutUs />}></Route>
-            <Route path="/complaintForm" element={<TemplateContact />}></Route>
-            <Route path="/legalTerms" element={<TemplateLegalTerms />}></Route>
-            <Route path="/cookiesTerms" element={<TemplateCookies />}></Route>
-            <Route
-              path="/ecomerceTerms"
-              element={<TemplateEcomerceTerms />}
-            ></Route>
-            <Route
-              path="*"
-              element={<TemplateBodyMain/>}
-            ></Route>
-          </Routes>
+            <Routes>
+              <Route
+                index
+                element={<TemplateBodyMain></TemplateBodyMain>}
+              ></Route>
+              <Route path="/home" element={<TemplateBodyMain />}></Route>
+              <Route path="/aboutus" element={<TemplateAboutUs />}></Route>
+              <Route
+                path="/complaintForm"
+                element={<TemplateContact />}
+              ></Route>
+              <Route
+                path="/legalTerms"
+                element={<TemplateLegalTerms />}
+              ></Route>
+              <Route path="/cookiesTerms" element={<TemplateCookies />}></Route>
+              <Route
+                path="/ecomerceTerms"
+                element={<TemplateEcomerceTerms />}
+              ></Route>
+              <Route path="*" element={<TemplateBodyMain />}></Route>
+            </Routes>
+          </MainContext>
         </BrowserRouter>
       </div>
     </>
