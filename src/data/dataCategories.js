@@ -11,7 +11,7 @@
         id:2,
         name:"Coca Cola 3L",
         price:12.90,
-        srcImage:'/img/Categorias/aguas_y_cervezas/Gaseosa_Coca_Cola_3L.jpg',
+        srcImage:'/img/Categorias/aguas_y_cervezas/Gaseosa_Coca_Cola_3_L.jpg',
         category:'Aguas y gaseosas'
     },
     {
@@ -102,7 +102,7 @@
         id:15,
         name:"01 Bombon Sublime",
         price:12.80,
-        srcImage:'/img/Categorias/confiteria/01_Bombon_Sublimex.jpg',
+        srcImage:'/img/Categorias/confiteria/01_Bombon_Sublime.jpg',
         category:'Confiteria'
     },
     {
@@ -123,7 +123,7 @@
         id:18,
         name:"Guillete Prestobarba",
         price:5.70,
-        srcImage:'/img/Categorias/cuidadopersonal/Guillete_Prestobarba_3_1.jpg',
+        srcImage:'/img/Categorias/cuidadopersonal/Gillete_Prestobarba_3_1.jpg',
         category:'Cuidado Personal'
     },
     {
