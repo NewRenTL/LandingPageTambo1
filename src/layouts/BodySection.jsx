@@ -29,9 +29,8 @@ const BodySection = () => {
   return (
     <div className="flex px-1 md:px-2 py-2 w-full bg-transparent">
       <InternBar />
-      {/* <Banner /> */}
       {sectionEstablished ? (
-        <div className="flex flex-wrap w-4/5 overflow-x-auto">
+        <div className="flex flex-wrap justify-center items-center border-4 border-[#B22D8A] rounded-xl w-4/5 overflow-x-auto">
           {filteredItems.map((item) => (
             <CardItems
               key={item.id}
@@ -39,6 +38,7 @@ const BodySection = () => {
               price={item.price}
               img={item.srcImage}
               openModal = {() => openModal(item)}
+              heightOptional = "h-[300px]"
             />
           ))}
           <CardPopItem

@@ -70,9 +70,9 @@ const CardPopItem: React.FC<ModalRestaurantProps> = ({
       onClose();
     }  
   }
-  
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-5 z-50 flex h-auto justify-center items-center">
+    <div className="fixed inset-0 bg-black bg-opacity-15 z-50 flex h-auto justify-center items-center">
       <div className="bg-white flex flex-col rounded-lg px-5 py-2 md:py-4 w-10/12 md:w-6/12 overflow-y-auto h-[500px]">
         <div
           onClick={onClose}

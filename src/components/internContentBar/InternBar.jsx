@@ -30,7 +30,7 @@ const InternBar = () => {
         {titleList.map((title, index) => (
           <li
             key={index}
-            className="flex px-1 py-1 w-full justify-start items-center mb-1 hover:bg-yellow-100 flex-grow bg-[#B22D8A]"
+            className="flex px-1 py-4 w-full justify-start items-center mb-1 hover:bg-yellow-100 flex-grow bg-[#B22D8A]"
             onClick={()=> handleSectionClick(title)}
           >
             <svg

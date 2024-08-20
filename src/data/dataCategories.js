@@ -5,21 +5,21 @@
         name:"Frugos Del Valle",
         price:4.90,
         srcImage:'/img/Categorias/aguas_y_cervezas/01_Frugos_Del_Valle_Mango_1_Lt.jpg',
-        category:'Aguas y Gaseosas'
+        category:'Aguas y gaseosas'
     },
     {
         id:2,
         name:"Coca Cola 3L",
         price:12.90,
         srcImage:'/img/Categorias/aguas_y_cervezas/Gaseosa_Coca_Cola_3L.jpg',
-        category:'Aguas y Gaseosas'
+        category:'Aguas y gaseosas'
     },
     {
         id:3,
         name:"Gaseosa Guarana 3L",
         price:8.90,
         srcImage:'/img/Categorias/aguas_y_cervezas/Gaseosa_Guarana_3_L.jpg',
-        category:'Aguas y Gaseosas'
+        category:'Aguas y gaseosas'
     },
     {
         id:4,
@@ -89,21 +89,21 @@
         name:"01 Beso de Moza",
         price:9.90,
         srcImage:'/img/Categorias/confiteria/01_Beso_de_Moza.jpg',
-        category:'Comidas'
+        category:'Confiteria'
     },
     {
         id:14,
         name:"01 Bombon Bon Bon",
         price:11.90,
         srcImage:'/img/Categorias/confiteria/01_Bombon_Bon_Bon.jpg',
-        category:'Comidas'
+        category:'Confiteria'
     },
     {
         id:15,
         name:"01 Bombon Sublime",
         price:12.80,
         srcImage:'/img/Categorias/confiteria/01_Bombon_Sublimex.jpg',
-        category:'Comidas'
+        category:'Confiteria'
     },
     {
         id:16,

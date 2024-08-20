@@ -9,7 +9,7 @@ const CardItems = ({
   nextSlide = () => {},
   prevSlide = () => {},
   openModal,
-  heightOptional
+  heightOptional = ''
 }) => {
   // const {incrementCar} = useContext(mainContext)
   const { incrementWishesOne, addWishes } = useContext(mainContext);
@@ -23,7 +23,7 @@ const CardItems = ({
   return (
     <article
       onClick={openModal}
-      className=" flex flex-col relative justify-center w-[200px] items-center bg-[#FFFFFF] mx-auto py-6 rounded-xl hover:cursor-pointer transition-all duration-200 hover:scale-110"
+      className={`flex flex-col relative justify-center w-[200px] items-center bg-[#FFFFFF] mx-auto py-6 rounded-xl hover:cursor-pointer transition-all duration-200 hover:scale-110 ${heightOptional}`}
     >
       <button
         className="absolute font-hurme3 -left-7 md:hidden top-1/2 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-amber-300 hover:transition-colors hover:duration-200"
