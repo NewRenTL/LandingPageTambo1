@@ -2,6 +2,22 @@ import React from "react";
 import inst_icon from '@assets/img/insta-iconNewSize.png'
 
 const Contactos = () => {
+  const handleFacebookClick = () => {
+    window.location.href = "https://www.facebook.com/PractitiendasTambo"; // Reemplaza con la URL de tu página de Facebook
+  };
+
+  const handleWhatsAppClick = () => {
+    window.location.href = "https://wa.me/tu_numero_telefonico"; // Reemplaza con la URL de tu cuenta de WhatsApp
+  };
+
+  const handleTikTokClick = () => {
+    window.location.href = "https://www.tiktok.com/@tiendas_tambo"; // Reemplaza con la URL de tu cuenta de TikTok
+  };
+
+  const handleInstagramClick = () => {
+    window.location.href = "https://www.instagram.com/practitiendatambo"; // Reemplaza con la URL de tu cuenta de Instagram
+  };
+
   return (
     <div className="flex flex-col w-full md:w-[30%] justify-center items-center px-2 py-2 my-2 bg-transparent">
       <div className="flex justify-center items-center py-1 px-2 bg-transparent">
@@ -9,7 +25,7 @@ const Contactos = () => {
       </div>
 
       <div className="flex justify-center items-center py-1 px-2 my-2 mx-1 bg-transparent">
-        <div className="facebook-icon flex px-1 py-1">
+        <div onClick={handleFacebookClick} className="facebook-icon flex px-1 py-1 hover:scale-110 hover:cursor-pointer transition duration-200">
           <svg
             className="flex w-10 h-10"
             version="1.1"
@@ -32,7 +48,7 @@ const Contactos = () => {
             </g>
           </svg>
         </div>
-        <div className="whatapp-icon flex px-1 py-1">
+        <div className="whatapp-icon flex px-1 py-1  hover:scale-110 hover:cursor-pointer transition duration-200">
           <svg
             className="flex w-10 h-10"
             viewBox="-4.16 -4.16 40.32 40.32"
@@ -99,7 +115,7 @@ const Contactos = () => {
             </g>
           </svg>
         </div>
-        <div className="tiktok-icon flex px-1 py-1">
+        <div onClick={handleTikTokClick} className="tiktok-icon flex px-1 py-1  hover:scale-110 hover:cursor-pointer transition duration-200">
           <svg
             fill="#FFFFFF"
             className="flex w-10 h-10"
@@ -137,7 +153,7 @@ const Contactos = () => {
             </g>
           </svg>    
         </div>
-        <div className="tiktok-icon flex px-1 py-1">
+        <div onClick={handleInstagramClick} className="instagram-icon flex px-1 py-1 hover:scale-110 hover:cursor-pointer transition duration-200">
           <img src={inst_icon} className="flex w-12 h-12"></img>
         </div>
       </div>
