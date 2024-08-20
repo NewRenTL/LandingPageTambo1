@@ -9,9 +9,11 @@ const CardItems = ({
   nextSlide = () => {},
   prevSlide = () => {},
   openModal,
+  heightOptional
 }) => {
   // const {incrementCar} = useContext(mainContext)
   const { incrementWishesOne, addWishes } = useContext(mainContext);
+  
 
   const addWishAndCount = () => {
     addWishes({ name: name, price: price, img: img });

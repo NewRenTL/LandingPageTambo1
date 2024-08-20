@@ -1,9 +1,13 @@
 import React from "react";
-
+import { mainContext } from "@src/contexts/MainContext";
+import { useContext } from "react";
 const InternBar = () => {
+
+  const { setSectionEstablished } = useContext(mainContext);
+
   const titleList = [
     "Cervezas",
-    "Pock Ecores",
+    "Pack Licores",
     "Comidas",
     "Listo para tomar",
     "Aguas y gaseosas",
@@ -11,6 +15,11 @@ const InternBar = () => {
     "Confiteria",
     "Cuidado Personal",
   ];
+
+  const handleSectionClick = (title) => {
+    setSectionEstablished(title); // Cambia el estado al hacer clic
+  };
+
 
   return (
     <aside className="flex flex-col w-1/5 bg-blue-400 mr-2">
@@ -22,6 +31,7 @@ const InternBar = () => {
           <li
             key={index}
             className="flex px-1 py-1 w-full justify-start items-center mb-1 hover:bg-yellow-100 flex-grow bg-[#B22D8A]"
+            onClick={()=> handleSectionClick(title)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
