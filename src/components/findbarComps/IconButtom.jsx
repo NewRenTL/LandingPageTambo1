@@ -9,7 +9,7 @@ function IconButtom({
   seePop = false,
   seeWishes = false,
 }) {
-  const { counterCar, items, wishes , addWishes} = useContext(mainContext);
+  const { counterCar, items, wishes} = useContext(mainContext);
 
   const [seePopAmount, setSeePopAmount] = useState(false);
 
@@ -42,10 +42,10 @@ function IconButtom({
           rounded-full font-semibold 
           bg-slate-50 h-6 w-6 text-center justify-center flex items-center`}
       >
-        {counterCar}
+        {seeWishes === false? counterCar:wishes.length}
       </span>
       <div className={`absolute z-10 -bottom-10  ${
-          !seePopAmount || seePop==false ? "hidden" : ""
+          seePopAmount == false || seePop==false ? "hidden" : ""
         } left-[50px] rotate-180 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-[#F7EA22] mt-2 self-center`}></div>
 
       <div
@@ -55,12 +55,11 @@ function IconButtom({
       >
         <p className="text-[#F7EA22] font-hurme3 mb-2 text-xl">Lista:</p>
         {items.map((item, index) => (
-          <div className="w-full flex flex-col mb-2">
-            <p className="text-[#F7EA22] font-hurme3" key={index}>
-              {item.name}{" "}
+          <div key={index} className="w-full flex flex-col mb-2">
+            <p className="text-[#F7EA22] font-hurme3" >
+              {item.name}
             </p>
             <p className="text-[#F7EA22] font-hurme3">
-              {" "}
               Cantidad: {item.amount}
             </p>
           </div>

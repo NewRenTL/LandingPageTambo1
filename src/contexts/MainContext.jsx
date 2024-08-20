@@ -3,6 +3,7 @@ import { mainContext } from "./MainContext";
 
 const MainContext = ({ children }) => {
   const [counterCar, setCounterCar] = useState(0);
+  const [counterWishes,setCounterWishes] = useState(0)
   const [items, setItems] = useState([]);
   const [wishes,setWishes] = useState([])
 
@@ -13,6 +14,10 @@ const MainContext = ({ children }) => {
   const incrementWithNumber = (prevPre) => {
     setCounterCar((prev) => prev + prevPre);
   };
+
+  const incrementWishesOne =  () => {
+    setCounterWishes((prev)=> prev +1 )
+  }
 
   const decrementCar = () => {
     setCounterCar((prev) => {
@@ -26,6 +31,15 @@ const MainContext = ({ children }) => {
   const resetCar = () => {
     setCounterCar(0);
   };
+
+  const addWishes= (item) => {
+    if(item.length === 0) {
+        setWishes([item])
+    }
+    else{
+        setWishes((prevWishes)=> [...prevWishes,item])
+    }
+  }
 
   const addItem = (item) => {
     if (items.length === 0) {
@@ -56,6 +70,9 @@ const MainContext = ({ children }) => {
         setItems,
         decrementCar,
         resetCar,
+        wishes,
+        addWishes,
+        incrementWishesOne
       }}
     >
       {children}
