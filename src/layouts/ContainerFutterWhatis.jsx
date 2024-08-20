@@ -11,6 +11,11 @@ const ContainerFutterWhatis = () => {
   const handleNavigateToCookiesTerms = () => {
     navigate("/cookiesTerms")
   }
+
+  const handleNavigateComplains = () => {
+    navigate("/complaintForm")
+  }
+
   return (
     <div className="w-full flex flex-col md:flex-row justify-center items-center my-2">
       <div className="w-full flex flex-col md:w-4/12 h-[300px] justify-center items-center px-5  border-r-2 border-black">
@@ -48,6 +53,11 @@ const ContainerFutterWhatis = () => {
           <h2 className="font-bold uppercase text-xl font-futuraFont">Reclamaciones</h2>
         </div>
         <h3 className="my-2 font-semibold w-full font-hurme3">contacto@tambo.com</h3>
+        <div className="w-full flex flex-col  justify-center items-center">
+          <button onClick={handleNavigateComplains} className="px-5 py-3 mt-5 uppercase bg-[#B22B89] text-[#F5EF27] font-bold rounded-lg hover:cursor-pointer hover:scale-105 hover:cursor-pointer transition duration-200">
+            Libro de reclamaciones
+          </button>
+        </div>
       </div>
     </div>
   );

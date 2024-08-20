@@ -38,9 +38,9 @@ const MainContext = ({ children }) => {
     setItems((prevItems) => prevItems.filter((_, i) => i !== index));
   };
 
-  useEffect(() => {
-    console.log("Items updated:", items);
-  }, [items]);
+//   useEffect(() => {
+//     console.log("Items updated:", items);
+//   }, [items]);
 
   return (
     <mainContext.Provider
