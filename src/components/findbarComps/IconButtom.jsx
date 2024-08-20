@@ -7,8 +7,9 @@ function IconButtom({
   dpath = "",
   seeCounter = false,
   seePop = false,
+  seeWishes = false,
 }) {
-  const { counterCar, items } = useContext(mainContext);
+  const { counterCar, items, wishes , addWishes} = useContext(mainContext);
 
   const [seePopAmount, setSeePopAmount] = useState(false);
 
@@ -44,12 +45,12 @@ function IconButtom({
         {counterCar}
       </span>
       <div className={`absolute z-10 -bottom-10  ${
-          !seePopAmount ? "hidden" : ""
+          !seePopAmount || seePop==false ? "hidden" : ""
         } left-[50px] rotate-180 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-[#F7EA22] mt-2 self-center`}></div>
 
       <div
         className={`absolute ${
-          !seePopAmount ? "hidden" : ""
+          seePopAmount ==false || seePop ==false ? "hidden" : ""
         } flex flex-col z-20 top-20 w-[250px] max-h-[400px] bg-[#B22D8A] rounded-xl overflow-y-auto px-5 py-4 border-4 border-[#F7EA22]`}
       >
         <p className="text-[#F7EA22] font-hurme3 mb-2 text-xl">Lista:</p>

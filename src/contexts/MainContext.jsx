@@ -4,6 +4,7 @@ import { mainContext } from "./MainContext";
 const MainContext = ({ children }) => {
   const [counterCar, setCounterCar] = useState(0);
   const [items, setItems] = useState([]);
+  const [wishes,setWishes] = useState([])
 
   const incrementCar = () => {
     setCounterCar((prev) => prev + 1);
