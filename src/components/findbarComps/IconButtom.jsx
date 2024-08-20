@@ -64,6 +64,9 @@ function IconButtom({
             </p>
           </div>
         ))}
+        <button onClick={showPopAmount} className="px-5 py-1 uppercase bg-[#B22B89] text-[#F5EF27] border-[#F5EF27] border font-bold rounded-lg hover:cursor-pointer hover:scale-105 transition duration-200">
+            ENVIAR
+          </button>
       </div>
     </div>
   );
